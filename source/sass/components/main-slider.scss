@@ -1,0 +1,27 @@
+.main-slider {
+    &__item {
+        background-color: #101E41;
+        border-radius: 2rem;
+    }
+
+    &__content {
+        padding-top: 7rem;
+        padding-bottom: 7rem;
+        padding-left: 4rem;
+        max-width: 50%;
+        display: flex;
+        flex-direction: column;
+        gap: 2.8rem;
+    }
+
+    &__text {
+        color: var(--surface-secondary);
+        display: flex;
+        flex-direction: column;
+        gap: 1.6rem;
+
+        @include vp-768 {
+            gap: 2.8rem;
+        }
+    }
+}

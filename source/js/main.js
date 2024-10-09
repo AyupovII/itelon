@@ -1,6 +1,7 @@
 import { modals } from './modules/modals';
 import { accordion } from './modules/accordion';
 import { tabs } from './modules/tabs';
+import { swiperController } from './modules/swiperController';
 
 // все скрипты должны быть в обработчике 'DOMContentLoaded', но не все в 'load'
 // в load следует добавить скрипты, не участвующие в работе первого экрана
@@ -16,6 +17,7 @@ window.addEventListener('DOMContentLoaded', () => {
 		modals();
 		accordion();
 		tabs()
+		swiperController();
 	});
 });
 

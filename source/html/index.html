@@ -1,18 +1,61 @@
 <!DOCTYPE html>
 <html lang="ru">
-	@@include("source/html/base/head.html", { "title": "Главная" })
-	<body>
-		<div class="wrapper">
-			@@include("source/html/base/header.html")
-			<main>
-				<section class="intro">
-					<div class="container">
+@@include("source/html/base/head.html", { "title": "Главная" })
+
+<body>
+	<div class="wrapper">
+		@@include("source/html/base/header.html")
+		<main>
+			<section class="intro">
+				<div class="container">
+					<div class="swiper main-slider">
+						<div class="swiper-wrapper">
+							<div class="swiper-slide">
+								<div class="main-slider__item">
+									<div class="main-slider__content">
+										<div class="main-slider__text">
+											<h2>СХД RAIDIX.</br> Рекомендовано</br> для импортозамещения</h2>
+											<h5>Программное обеспечение RADIX внесено в Единый реестр российских
+												программ для электронных вычеслительных машин и баз данных</h5>
+										</div>
+										<button class="btn btn--accent btn--large">Подобрать сервер</button>
+									</div>
+								</div>
+							</div>
+
+							<div class="swiper-slide">
+								<div class="main-slider__item">
+									<div class="main-slider__content">
+										<div class="main-slider__text">
+											<h2>СХД RAIDIX.</br> Рекомендовано</br> для импортозамещения</h2>
+											<h5>Программное обеспечение RADIX внесено в Единый реестр российских
+												программ для электронных вычеслительных машин и баз данных</h5>
+										</div>
+										<button class="btn btn--accent btn--large">Подобрать сервер</button>
+									</div>
+								</div>
+							</div>
+							<div class="swiper-slide">
+								<div class="main-slider__item">
+									<div class="main-slider__content">
+										<div class="main-slider__text">
+											<h2>СХД RAIDIX.</br> Рекомендовано</br> для импортозамещения</h2>
+											<h5>Программное обеспечение RADIX внесено в Единый реестр российских
+												программ для электронных вычеслительных машин и баз данных</h5>
+										</div>
+										<button class="btn btn--accent btn--large">Подобрать сервер</button>
+									</div>
+								</div>
+							</div>
+						</div>
 
 					</div>
-				</section>
-			</main>
-			@@include("source/html/base/footer.html")
-		</div>
-		@@include("source/html/base/scripts.html")
-	</body>
+				</div>
+			</section>
+		</main>
+		@@include("source/html/base/footer.html")
+	</div>
+	@@include("source/html/base/scripts.html")
+</body>
+
 </html>
