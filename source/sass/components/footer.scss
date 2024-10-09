@@ -1,0 +1,66 @@
+.footer {
+    display: flex;
+    flex-direction: column;
+    gap: 4rem;
+    margin-bottom: 6rem;
+
+    @include vp-768 {
+        margin-bottom: 4rem;
+    }
+
+    &__products {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        column-gap: 2rem;
+        row-gap: 4rem;
+
+        @include vp-768 {
+            grid-template-columns: 1fr 1fr;
+        }
+    }
+
+    &__content {
+        display: flex;
+        flex-direction: column;
+        gap: 1.6rem;
+    }
+
+    &__product-title {
+        margin-bottom: 1.6rem;
+    }
+
+    &__product-list {
+        display: flex;
+        flex-direction: column;
+        gap: 1.2rem;
+    }
+
+    &__social {
+        display: flex;
+        gap: 0.8rem;
+    }
+
+    &__agreements-list {
+        display: flex;
+        column-gap: 6rem;
+
+        @include vp-1024 {
+            flex-direction: column;
+            row-gap: 1.2rem;
+        }
+    }
+
+    &__contacts {
+        display: flex;
+        justify-content: space-between;
+
+        @include vp-768 {
+            flex-direction: column;
+            row-gap: 1.6rem;
+        }
+    }
+
+    &__address {
+        max-width: 67.6rem;
+    }
+}

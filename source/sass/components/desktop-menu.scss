@@ -1,0 +1,42 @@
+.desktop-menu {
+    display: flex;
+    justify-content: space-between;
+    gap: 4rem;
+
+    @include vp-768 {
+        display: none;
+    }
+
+    &__list {
+        display: flex;
+        gap: 4rem;
+        justify-content: space-between;
+        align-items: center;
+
+        &--desktop {
+            display: flex;
+
+            @include vp-1024 {
+                display: none;
+            }
+        }
+
+        &--tablet {
+            display: none;
+
+            @include vp-1024 {
+                display: flex;
+            }
+        }
+
+    }
+
+    a {
+        color: var(--text-primary);
+        white-space: nowrap;
+
+        &:hover {
+            color: var(--btn-primary-bg-hover);
+        }
+    }
+}

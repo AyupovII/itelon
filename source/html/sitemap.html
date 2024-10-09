@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="ru">
+@@include("source/html/base/head.html", { "title": "Разводящая страница" })
+
+<body>
+    <div class="wrapper">
+        @@include("source/html/base/header.html")
+        <main>
+            <section class="intro">
+                <div class="container">
+                    <h1>Разводящая страница</h1>
+                    <p>На многостраничных сайтах используйте эту страницу для создания списков всех страниц и ссылок на
+                        них.</p>
+                    <h2>Пример</h2>
+                    <ol>
+                        <li style="margin-top: 10px;">
+                            <a href="index.html" style="color: blue;">Главная — index.html</a>
+                        </li>
+                    </ol>
+                    <ol>
+                        <li style="margin-top: 10px;">
+                            <a href="ui.html" style="color: blue;">Главная — index.html</a>
+                        </li>
+                    </ol>
+                    <!-- /////////////////// -->
+                    <div class="tabs" data-tabs>
+                        <div class="tabs__nav" data-tabs-nav>
+                            <h4 class="tabs__title active" data-tabs-title>Кнопки</h4>
+                            <h4 class="tabs__title" data-tabs-title>Модалки</h4>
+                            <h4 class="tabs__title" data-tabs-title>Аккордеон</h4>
+                        </div>
+                        <div class="tabs__contents" data-tabs-items>
+                            <div class="tabs__content-item active" data-tabs-item>
+                                <h3>Large</h3>
+                                <div style="margin-top: 20px;">
+                                    <button type="button" class="btn btn--primary btn--large">primary</button>
+                                    <button type="button" class="btn btn--primary btn--large" disabled>disabled</button>
+                                    <button type="button" class="btn btn--secondary btn--large">secondary</button>
+                                    <button type="button" class="btn btn--outlined btn--large">outlined</button>
+                                    <button type="button" class="btn btn--accent btn--large">accent</button>
+                                    <button type="button" class="btn btn--ghost btn--large">ghost</button>
+                                </div>
+                                <h3>Medium</h3>
+                                <div style="margin-top: 20px;">
+                                    <button type="button" class="btn btn--primary btn--medium">primary</button>
+                                    <button type="button" class="btn btn--primary btn--medium"
+                                        disabled>disabled</button>
+                                    <button type="button" class="btn btn--secondary btn--medium">secondary</button>
+                                    <button type="button" class="btn btn--outlined btn--medium">outlined</button>
+                                    <button type="button" class="btn btn--accent btn--medium">accent</button>
+                                    <button type="button" class="btn btn--ghost btn--medium">ghost</button>
+                                </div>
+                                <h3>Small</h3>
+                                <div style="margin-top: 20px;">
+                                    <button type="button" class="btn btn--primary btn--small">primary</button>
+                                    <button type="button" class="btn btn--primary btn--small" disabled>disabled</button>
+                                    <button type="button" class="btn btn--secondary btn--small">secondary</button>
+                                    <button type="button" class="btn btn--outlined btn--small">outlined</button>
+                                    <button type="button" class="btn btn--accent btn--small">accent</button>
+                                    <button type="button" class="btn btn--ghost btn--small">ghost</button>
+                                </div>
+                                <h3>Кнопка с иконкой</h3>
+                                <div style="margin-top: 20px;">
+                                    <button type="button" class="btn btn--primary btn--large btn--icon-left">
+                                        <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <path fill-rule="evenodd" clip-rule="evenodd"
+                                                d="M9.23431 5.22781C9.54673 4.92406 10.0533 4.92406 10.3657 5.22781L16.7657 11.45C17.0781 11.7538 17.0781 12.2462 16.7657 12.55L10.3657 18.7722C10.0533 19.0759 9.54673 19.0759 9.23431 18.7722C8.9219 18.4685 8.9219 17.976 9.23431 17.6723L15.0686 12L9.23431 6.32775C8.9219 6.02401 8.9219 5.53155 9.23431 5.22781Z"
+                                                fill="currentColor" />
+                                        </svg>
+                                        primary
+                                    </button>
+                                    <button type="button" class="btn btn--primary btn--large btn--icon-left" disabled>
+                                        <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <path fill-rule="evenodd" clip-rule="evenodd"
+                                                d="M9.23431 5.22781C9.54673 4.92406 10.0533 4.92406 10.3657 5.22781L16.7657 11.45C17.0781 11.7538 17.0781 12.2462 16.7657 12.55L10.3657 18.7722C10.0533 19.0759 9.54673 19.0759 9.23431 18.7722C8.9219 18.4685 8.9219 17.976 9.23431 17.6723L15.0686 12L9.23431 6.32775C8.9219 6.02401 8.9219 5.53155 9.23431 5.22781Z"
+                                                fill="currentColor" />
+                                        </svg>
+                                        disabled
+                                    </button>
+                                    <button type="button" class="btn btn--secondary btn--large btn--icon-left">
+                                        <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <path fill-rule="evenodd" clip-rule="evenodd"
+                                                d="M9.23431 5.22781C9.54673 4.92406 10.0533 4.92406 10.3657 5.22781L16.7657 11.45C17.0781 11.7538 17.0781 12.2462 16.7657 12.55L10.3657 18.7722C10.0533 19.0759 9.54673 19.0759 9.23431 18.7722C8.9219 18.4685 8.9219 17.976 9.23431 17.6723L15.0686 12L9.23431 6.32775C8.9219 6.02401 8.9219 5.53155 9.23431 5.22781Z"
+                                                fill="currentColor" />
+                                        </svg>
+                                        secondary
+                                    </button>
+                                    <button type="button" class="btn btn--outlined btn--large btn--icon-left">
+                                        <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <path fill-rule="evenodd" clip-rule="evenodd"
+                                                d="M9.23431 5.22781C9.54673 4.92406 10.0533 4.92406 10.3657 5.22781L16.7657 11.45C17.0781 11.7538 17.0781 12.2462 16.7657 12.55L10.3657 18.7722C10.0533 19.0759 9.54673 19.0759 9.23431 18.7722C8.9219 18.4685 8.9219 17.976 9.23431 17.6723L15.0686 12L9.23431 6.32775C8.9219 6.02401 8.9219 5.53155 9.23431 5.22781Z"
+                                                fill="currentColor" />
+                                        </svg>
+                                        outlined
+                                    </button>
+
+                                    <button type="button" class="btn btn--ghost btn--large btn--icon-left">
+                                        <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <path fill-rule="evenodd" clip-rule="evenodd"
+                                                d="M9.23431 5.22781C9.54673 4.92406 10.0533 4.92406 10.3657 5.22781L16.7657 11.45C17.0781 11.7538 17.0781 12.2462 16.7657 12.55L10.3657 18.7722C10.0533 19.0759 9.54673 19.0759 9.23431 18.7722C8.9219 18.4685 8.9219 17.976 9.23431 17.6723L15.0686 12L9.23431 6.32775C8.9219 6.02401 8.9219 5.53155 9.23431 5.22781Z"
+                                                fill="currentColor" />
+                                        </svg>
+                                        ghost
+                                    </button>
+
+                                </div>
+                            </div>
+                            <div class="tabs__content-item" data-tabs-item>
+                                <div style="margin-top: 20px;">
+                                    <!-- для работы модалкок, нужно связать кнопку и модалку с помощью значения дата атрибута data-modal-button для кнокпи и data-modal для модалки
+                                        пример: data-modal-button="my-super-modal" для кнопки и data-modal="my-super-modal" для модалки
+                                        ниже живые примеры -->
+                                    <button type="button" class="btn" data-modal-button="modal-one">первая
+                                        модалка</button>
+                                    <button type="button" class="btn" data-modal-button="modal-two">вторая
+                                        модалка</button>
+                                </div>
+                            </div>
+                            <div class="tabs__content-item" data-tabs-item>
+                                <!-- если нужен аккордион с одним раскрытым блоком, используйте для дата атрибута data-accordion, значение "single-expand".
+                        если нужно раскрывать все блоки аккордиона не зависимо друг от друга, то оставьте пустым значение дата атрибут data-accordion
+                        примеры ниже -->
+                                <ul class="accordion" style="margin-top: 20px;" data-accordion="single-expand">
+                                    <li class="accordion_item active" data-accordion-item>
+                                        <button class="accordion_button" data-accordion-button>
+                                            кнопка аккордиона 1
+                                            <img class="accordion_icon" src="assets/svg/shevron-down.svg" alt="shevron-down">
+                                        </button>
+                                        
+                                        <div class="accordion_content">
+                                            <div class="accordion_hidden-wrap">
+                                                <img src="assets/img/jeans.jpg" alt="jeans"
+                                                    style="width: auto; height: 400px;">
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li class="accordion_item" data-accordion-item>
+                                        <button class="accordion_button" data-accordion-button>
+                                            кнопка аккордиона 2
+                                            <img class="accordion_icon" src="assets/svg/shevron-down.svg" alt="shevron-down">
+                                        </button>
+                                        <div class="accordion_content">
+                                            <div class="accordion_hidden-wrap">
+                                                <p>accordion content</p>
+                                                <p>accordion content</p>
+                                            </div>
+                                        </div>
+                                    </li>
+                                </ul>
+                                <h2>Пример аккордиона без ограничений на раскрытые блоки</h2>
+                                <!-- аккордион без ограничений на раскрытые блоки -->
+                                <ul class="accordion" style="margin-top: 20px;" data-accordion>
+                                    <li class="accordion_item" data-accordion-item>
+                                        <button class="accordion_button" data-accordion-button>
+                                            кнопка аккордиона 1
+                                        </button>
+                                        <div class="accordion_content">
+                                            <div class="accordion_hidden-wrap">
+                                                <img src="assets/img/jeans.jpg" alt="jeans"
+                                                    style="width: auto; height: 300px;">
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li class="accordion_item" data-accordion-item>
+                                        <button class="accordion_button" data-accordion-button>
+                                            кнопка Аккордеон 2
+                                        </button>
+                                        <div class="accordion_content">
+                                            <div class="accordion_hidden-wrap">
+                                                <p>accordion content</p>
+                                                <p>accordion content</p>
+                                            </div>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+
+                    </div>
+
+
+
+                    <!-- //////////////////// -->
+
+
+
+
+                </div>
+            </section>
+        </main>
+        @@include("source/html/base/footer.html")
+    </div>
+    @@include("source/html/components/modal-1.html")
+    @@include("source/html/components/modal-2.html")
+    @@include("source/html/base/scripts.html")
+</body>
+
+</html>

@@ -1,0 +1,80 @@
+.header {
+    display: flex;
+    flex-direction: column;
+    gap: 2.8rem;
+    padding-top: 2.4rem;
+    padding-bottom: 2.4rem;
+    
+
+    &__wrapper {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    &__email,
+    &__phone {
+        font-size: clamp(1rem, 100%, 1.4rem);
+    }
+
+    &__search-icon {
+        cursor: pointer;
+        padding: 1.4rem;
+        background-color: var(--surface-primary);
+
+    }
+
+    &__menu-icon {
+        cursor: pointer;
+        display: none;
+        padding: 1rem;
+        border-radius: 8px;
+        border: 1px solid var(--btn-outlined-dark-border-default);
+
+        @include vp-1024 {
+            display: block;
+        }
+    }
+
+    &__contacts {
+        display: flex;
+        align-items: center;
+
+        &>a {
+            border-right: 1px solid var(--surface-tertiary);
+            padding-left: 1.2rem;
+            padding-right: 1.2rem;
+        }
+
+        &--desktop {
+            @include vp-1024 {
+                display: none;
+            }
+        }
+    }
+
+    &__logo {}
+
+    &__social {
+        padding-left: 1.2rem;
+        display: flex;
+        gap: 10px;
+    }
+
+    &__buttons {
+        display: flex;
+        gap: 1.2rem;
+
+        @include vp-768 {
+            display: none;
+        }
+    }
+
+    &__menu-search {
+        display: none;
+
+        @include vp-768 {
+            display: block;
+        }
+    }
+}

@@ -1,0 +1,33 @@
+// Vendor
+// ---------------------------------
+@import 'vendor/normalize';
+
+// Global
+// ---------------------------------
+@import 'variables';
+@import 'breakpoints';
+@import 'mixins';
+@import 'global/fonts';
+@import 'global/reboot';
+@import 'global/utils';
+@import 'global/container';
+@import 'global/ui';
+
+
+// Components
+// ---------------------------------
+@import 'components/header';
+@import 'components/footer';
+@import 'components/modal';
+@import 'components/accordion';
+@import 'components/tabs';
+@import 'components/desktop-menu';
+@import 'components/search';
+
+// Ui
+// ---------------------------------
+@import 'ui/btn';
+
+// ---------------------------------
+
+// адаптив пишем внутри каждого класса (смотрим container.scss)

@@ -1,0 +1,54 @@
+:root {
+    // Colors
+    --primary: #0083CA;
+    --surface-primary: #F4F8FB;
+    --surface-secondary: #FFFFFF;
+    --surface-tertiary: #D1ECFA;
+    --surface-f: #D9E4EC;
+    --text-primary: #001729;
+    --text-secondary: #58616A;
+    --text-tertiary: #9FABB2;
+    --error-bg: #F05D5E;
+    --error-border: #ED2C2D;
+    --error-text: #CD0E10;
+    --success-bg: #E6FEF7;
+    --success-border: #4DB99A;
+    --success-text: #048B65;
+    --disable-bg: #D9E4EC;
+    --disable-border: #C1CED7;
+    --disable-text: #79838B;
+    ////Button-Accent
+    --btn-accent-bg-default:#ED2C2D;
+    --btn-accent-bg-hover:#CD0E10;
+    --btn-accent-border-focus: #F8BFBF;
+    ////Button-Primary
+    --btn-primary-bg-default:#005AA3;
+    --btn-primary-bg-hover: #004B88;
+    --btn-primary-border-focus: #CBE5F4;
+    --btn-primary-text: #FFFFFF;
+    --btn-primary-bgicon: #0083CA;
+    --btn-primary-icon: #FFFFFF;
+    ////Button-Secondary
+    --btn-secondary-bg-default: #D1ECFA;
+    --btn-secondary-bg-hover: #BAE2F7;
+    --btn-secondary-border-focus: #81C3E6;
+    --btn-secondary-text: #005AA3;
+    --btn-secondary-bgicon: #FFFFFF;
+    --btn-secondary-icon: #0083CA;
+    ////Button-Outlined
+    --btn-outlined-dark-border-default: #C1CED7;
+    --btn-outlined-dark-bg-hover: #BAE2F7;
+    --btn-outlined-dark-text: #58616A;
+    --btn-outlined-dark-bgicon: #D1ECFA;
+    --btn-outlined-dark-icon: #005AA3;
+
+    // Project palette
+    // для нейминга цветов используем https://www.htmlcsscolor.com/hex/334482
+
+
+    // Gradient
+    --dark-blue: linear-gradient( #101E41 0%, #005AA3 100%);
+
+    // Transition
+    --default-transition: 0.3s ease;
+}
