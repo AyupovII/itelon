@@ -1,0 +1,36 @@
+.banner {
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 52.4rem;
+    background-position: center;
+    border-radius: 2rem;
+    padding: 6rem 8rem;
+
+    @include vp-1024 {
+        padding: 4rem;
+    }
+
+    @include vp-768 {
+        padding: 1.6rem 2.4rem 2.4rem 2.4rem;
+    }
+
+    &__content {
+        display: flex;
+        flex-direction: column;
+        gap: 8rem;
+    }
+
+    &__header {
+        display: flex;
+        flex-direction: column;
+        gap: 1.2rem;
+        color: var(--surface-secondary);
+    }
+
+    &__text {
+        max-width: 55.6rem;
+        background-color: var(--surface-tertiary);
+        padding: 2rem 3.2rem;
+        border-radius: 2rem;
+    }
+}

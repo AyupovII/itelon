@@ -1,0 +1,96 @@
+.partner {
+    display: flex;
+
+    @include vp-1024 {
+        flex-direction: column;
+    }
+
+    &__advantages {
+        display: grid;
+        flex-direction: column;
+        gap: 2rem;
+
+        @include vp-1024 {
+            grid-template-columns: 1fr 1fr;
+        }
+
+        @include vp-768 {
+            grid-template-columns: 1fr;
+        }
+    }
+
+    &__main {
+        background-color: var(--surface-secondary);
+        max-width: 65.2rem;
+        padding: 1.2rem 1.2rem 4rem 1.2rem;
+        display: flex;
+        flex-direction: column;
+        gap: 3.6rem;
+
+        @include vp-1024 {
+            max-width: 100%;
+
+        }
+
+        @include vp-768 {
+            padding: 0.4rem 0.4rem 2rem 0.4rem;
+        }
+
+    }
+
+    &__image {
+        max-height: 41.4rem;
+        border-radius: 1.6rem;
+    }
+
+    &__content {
+        padding: 0rem 2.4rem;
+        display: flex;
+        flex-direction: column;
+        gap: 2.8rem;
+
+        @include vp-1024 {
+            gap: 2.6rem;
+        }
+
+        @include vp-768 {
+            gap: 0.8rem;
+        }
+    }
+
+    &__advantages-item {
+        display: flex;
+        gap: 2.4rem;
+        padding: 1.2rem;
+        border-radius: 2rem;
+        background-color: var(--surface-secondary);
+        align-items: flex-start;
+
+    }
+
+    &__advantages-icon {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 2.7rem;
+        background-color: var(--surface-f);
+        border-radius: 1.6rem;
+
+        &>img {
+            width: 6rem;
+            height: 6rem;
+            max-width: none;
+        }
+    }
+
+    &__safe-company {
+        height: 4.4rem;
+        width: 12.1rem;
+    }
+
+    &__advantages-text {
+        display: flex;
+        flex-direction: column;
+        gap: 0.8rem;
+    }
+}

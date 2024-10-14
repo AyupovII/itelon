@@ -20,6 +20,7 @@
 		-webkit-box-shadow: 0px -5px 5px -5px rgba(34, 60, 80, 0.24) inset;
 		-moz-box-shadow: 0px -5px 5px -5px rgba(34, 60, 80, 0.24) inset;
 		box-shadow: 0px -5px 5px -5px rgba(34, 60, 80, 0.24) inset;
+		z-index: 2;
 	}
 
 	main {
@@ -58,4 +59,16 @@
 
 .js-focus-visible :focus:not(.focus-visible) {
 	outline: none;
+}
+
+section+section {
+	margin-top: 12rem;
+
+	@include vp-1024 {
+		margin-top: 6rem;
+	}
+
+	@include vp-768 {
+		margin-top: 4rem;
+	}
 }
